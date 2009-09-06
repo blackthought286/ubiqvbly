@@ -20,8 +20,8 @@ CmdUtils.CreateCommand({
  },
  execute: function(args){
    
-   var loo = this._vbSetType("shorturl");
-   var seturl = loo[0].url+'?action='+loo[0].action + '&url='+args.object.text+'&format=simple';
+   var vbType = this._vbSetType("shorturl");
+   var seturl = vbType[0].url+'?action='+ vbType[0].action + '&url='+args.object.text+'&format=simple';
    jQuery.get( seturl, function( show ) {
       CmdUtils.setSelection( show );
     })
