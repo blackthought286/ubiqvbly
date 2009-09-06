@@ -13,12 +13,18 @@ CmdUtils.CreateCommand({
    if(seturl){
 		jQuery.get( seturl, function( show ) {
 			//CmdUtils.setSelection( show );
+			//place url in the preview window and pass it to vb_SetURL to be used later.
 			pblock.innerHTML = show;
 			vb_setURL = show;
 		})
    }
  },
  _vbSetType: function vbSetType__vbSetType(results){
+   /*This function will be expanded so I made it a little more complicated than it had to be 
+	  so that it would be easily extensible for when the time came.
+   */
+   
+   //set and return the settings of the url to be sent back
    var url = "http://vb.ly/api/";
    var short_url = "shorturl";
    var stats = "stats";
@@ -32,6 +38,7 @@ CmdUtils.CreateCommand({
   }
  },
  execute: function(args){
+		//replace selected text with shortened url
          CmdUtils.setSelection( vb_setURL );
  }
 });
