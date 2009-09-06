@@ -1,0 +1,9 @@
+Welcome to my Ubiquity Plugin for the vb.ly url shortening service. It is very easy to use, you simply foolow these simple steps. 
+1. highlight the link that you want to shorten. 
+2. Then call your ubiquity window. (using cntrl+spacebar on windows)
+3. Type in "vbly" or "vb.ly"
+4. look at the preview window and make sure that it is the url that you want to shorten
+5. Hit  enter and you will see your highlighted text turn to a shortened link
+
+We will be adding more features to this command so keep on the lookout. If you would like to just subscribe to the plugin without the source code
+go to vbshort.hiphopmusiq.com and hit subscribe. Yes, its that simple. 
